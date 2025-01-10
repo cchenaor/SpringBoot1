@@ -1,0 +1,10 @@
+@Entity
+public class ChangeRequest {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String title;
+    private String description;
+    private String status; // "Pendiente", "Aprobado", "Rechazado"
+    private LocalDateTime createdAt;
+}
