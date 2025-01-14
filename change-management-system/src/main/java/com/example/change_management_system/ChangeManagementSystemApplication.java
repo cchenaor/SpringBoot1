@@ -8,6 +8,7 @@ public class ChangeManagementSystemApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ChangeManagementSystemApplication.class, args);
+		System.out.println("Aplicación iniciada correctamente!");
 	}
 
 }
