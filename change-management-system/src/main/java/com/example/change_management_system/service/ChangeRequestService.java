@@ -1,6 +1,6 @@
 package com.example.change_management_system.service;
 
-import com.example.change_management_system.model.ChangeRequest;
+import com.example.change_management_system.model.User;
 import com.example.change_management_system.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,13 +18,13 @@ public class ChangeRequestService {
     }
 
     // Método para obtener todas las solicitudes de cambio
-    public List<ChangeRequest> getAllChangeRequests() {
+    public List<User> getAllUsers() {
         return repository.findAll();
     }
 
     // Método para guardar una nueva solicitud de cambio
-    public ChangeRequest saveChangeRequest(ChangeRequest changeRequest) {
-        return repository.save(changeRequest);
+    public User saveUser(User User) {
+        return repository.save(User);
     }
 
     // Otros métodos según sea necesario...
