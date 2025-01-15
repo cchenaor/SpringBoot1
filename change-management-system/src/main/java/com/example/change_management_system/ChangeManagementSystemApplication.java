@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableJpaRepositories(basePackages = "com.example.change_management_system.Repository")
 @EntityScan(basePackages = "com.example.change_management_system.model")
-@SpringBootApplication(scanBasePackages = "com.example.change_management_system")
+@SpringBootApplication
 public class ChangeManagementSystemApplication {
 
 	public static void main(String[] args) {
