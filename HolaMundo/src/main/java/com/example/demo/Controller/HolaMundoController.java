@@ -1,11 +1,16 @@
 package com.example.demo.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
 public class HolaMundoController {
-    @GetMapping("/")
-    public String holaMundo() {
-        return "¡Hola mundo!";
+    @PostMapping("/login")
+    public String holaMundo(String username, String password) {
+        System.out.println("Usuario: " + username);
+        System.out.println("Contraseña: " + password);
+
+        // Redirige a otra página o devuelve una respuesta
+        return "redirect:/success";
     }
 }
